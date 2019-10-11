@@ -1,18 +1,18 @@
 #include <iostream>
+#include "lib.h"
 
 using namespace std;
-//unright code!
-int fib( int n ){
-
-    if (n == 1 || n == 2){
-       return 1;
-    }
-    return fib(n - 1) + fib(n - 2);
-}
 
 int main() {
     int n;
     cin >> n;
-    cout << fib(n) << endl;
+
+    int res = fib(n);
+
+    if (res == -1) {
+        cout << "n must be greater than or equal 0" << endl;
+    } else {
+        cout << res << endl;
+    }
     return 0;
 }
