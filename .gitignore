@@ -31,6 +31,6 @@
 *.out
 *.app
 *.sh
-googletest/*
+**/googletest/*
 .idea/*
 *-debug/*
